@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rohith.kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj": {}
+    "C:\\Users\\Rohith Kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rohith.kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj": {
+    "C:\\Users\\Rohith Kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rohith.kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj",
+        "projectUniqueName": "C:\\Users\\Rohith Kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj",
         "projectName": "MyMovieList",
-        "projectPath": "C:\\Users\\rohith.kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj",
-        "packagesPath": "C:\\Users\\rohith.kurian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rohith.kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\obj\\",
+        "projectPath": "C:\\Users\\Rohith Kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\MyMovieList.csproj",
+        "packagesPath": "C:\\Users\\Rohith Kurian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rohith Kurian\\Desktop\\Projects\\MyMovieList\\MyMovieList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rohith.kurian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Rohith Kurian\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
