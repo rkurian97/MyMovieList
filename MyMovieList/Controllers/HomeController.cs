@@ -6,7 +6,7 @@ namespace MyMovieList.Controllers
 {
     public class HomeController : ApiController
     {
-        [Authorize]
+        [Authorize (AuthenticationSchemes = "Bearer")]
         public ActionResult Get()
         {
             return Ok("Works");

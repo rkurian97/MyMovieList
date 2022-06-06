@@ -36,7 +36,9 @@ var key = Encoding.ASCII.GetBytes(appSettings.Secret);
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultForbidScheme= JwtBearerDefaults.AuthenticationScheme;
 })
 .AddJwtBearer(x =>
 {
@@ -50,7 +52,6 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
-
 
 var app = builder.Build();
 
