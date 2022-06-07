@@ -1,0 +1,28 @@
+$first: #121212;
+$second: #dc3545;
+$third: #FAF9F6;
+$fourth: #404040;
+
+@mixin text-second{
+    color: $second !important;
+}
+
+@mixin text-third{
+    color: $third !important;
+}
+
+@mixin bg-first{
+    background-color: $first !important;
+}
+
+@mixin bg-second{
+    background-color: $second !important;
+}
+
+@mixin bg-third{
+    background-color: $third !important;
+}
+
+.bg-fourth{
+    background-color: $fourth !important;
+}

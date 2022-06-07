@@ -24,6 +24,8 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -33,8 +35,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    ReactiveFormsModule,
     MdbAccordionModule,
     MdbCarouselModule,
     MdbCheckboxModule,

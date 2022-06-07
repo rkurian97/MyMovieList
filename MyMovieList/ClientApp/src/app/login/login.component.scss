@@ -1,0 +1,13 @@
+@use "../shared/_global.scss";
+
+.text-red{
+    @include global.text-second;
+}
+
+.bg-button{
+    @include global.bg-second;
+}
+
+.form-inputs:focus{
+    border-color: red !important;
+}
