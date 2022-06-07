@@ -1,0 +1,57 @@
+<!-- Section: Design Block -->
+<section class="h-100">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start">
+        <div class="container">
+            <div class="row gx-lg-5 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="my-5 display-3 fw-bold ls-tight">
+                        Keep Track <br />
+                        <span class="text-red">of your favorite Movies</span>
+                    </h1>
+                    <p style="color: hsl(217, 10%, 50.8%)">
+                        Search movie info, add them your list, and rate them! A great app to keep track of all the
+                        movies that are special to you!
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card bg-fourth">
+                        <div class="card-body py-5 px-md-5">
+                            <form [formGroup]="registerForm" (ngSubmit)="register()">
+                                <!-- Email input -->
+                                <mdb-form-control class="mb-4">
+                                    <input mdbInput type="email" class="form-control  form-inputs text-white"
+                                        formControlName="username" />
+                                    <label mdbLabel class="form-label text-white">Email address</label>
+                                </mdb-form-control>
+
+                                <!-- Password input -->
+                                <mdb-form-control class="form-outline mb-4">
+                                    <input mdbInput type="password" class="form-control text-white"
+                                        formControlName="password" />
+                                    <label mdbLabel class="form-label text-white">Password</label>
+                                </mdb-form-control>
+
+                                <!-- Confirm Password input -->
+                                <mdb-form-control class="form-outline mb-4">
+                                    <input mdbInput type="password" class="form-control text-white"
+                                        formControlName="password2" />
+                                    <label mdbLabel class="form-label text-white">Confirm Password</label>
+                                </mdb-form-control>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-4 bg-button">
+                                    Sign up
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
