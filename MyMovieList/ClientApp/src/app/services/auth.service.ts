@@ -15,7 +15,7 @@ export class AuthService {
   }
 
   login(data: any): Observable<any>{
-    return this.http.post(this.loginPath, data)
+    return this.http.post(this.loginPath, data, {responseType: 'text' })
   }
 
   register(data: any): Observable<any> {
