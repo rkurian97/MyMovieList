@@ -26,6 +26,9 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
+import { AuthService } from './services/auth.service';
+ 
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -53,8 +56,9 @@ import { RegisterComponent } from './register/register.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

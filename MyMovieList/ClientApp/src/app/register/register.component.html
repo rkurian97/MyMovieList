@@ -18,33 +18,37 @@
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="card bg-fourth">
                         <div class="card-body py-5 px-md-5">
+                            <!-- Form -->
                             <form [formGroup]="registerForm" (ngSubmit)="register()">
                                 <!-- Email input -->
-                                <mdb-form-control class="mb-4">
+                                <mdb-form-control [ngClass]="{'mb-4': !username?.touched || !username?.errors?.required}">
                                     <input mdbInput type="email" class="form-control  form-inputs text-white"
                                         formControlName="username" />
                                     <label mdbLabel class="form-label text-white">Email address</label>
                                 </mdb-form-control>
+                                <div *ngIf="username?.touched && username?.errors?.required" class="invalid mt-1 mb-3">Please provide a valid email address.</div>
 
                                 <!-- Password input -->
-                                <mdb-form-control class="form-outline mb-4">
+                                <mdb-form-control [ngClass]="{'mb-4': !password?.touched || !password?.errors?.required}">
                                     <input mdbInput type="password" class="form-control text-white"
-                                        formControlName="password" />
+                                        formControlName="password" required/>
                                     <label mdbLabel class="form-label text-white">Password</label>
                                 </mdb-form-control>
+                                <div *ngIf="password?.touched && password?.errors?.required" class="invalid mt-1 mb-3">Please provide a valid password.</div>
 
                                 <!-- Confirm Password input -->
-                                <mdb-form-control class="form-outline mb-4">
+                                <mdb-form-control [ngClass]="{'mb-4': !password2?.touched || !password2?.errors?.required}">
                                     <input mdbInput type="password" class="form-control text-white"
                                         formControlName="password2" />
                                     <label mdbLabel class="form-label text-white">Confirm Password</label>
                                 </mdb-form-control>
+                                <div *ngIf="password2?.touched && password2?.errors?.required" class="invalid mt-1 mb-3">Please confirm the password</div>
 
                                 <!-- Submit button -->
                                 <button type="submit" class="btn btn-primary btn-block mb-4 bg-button">
                                     Sign up
                                 </button>
-
+                                
                             </form>
                         </div>
                     </div>

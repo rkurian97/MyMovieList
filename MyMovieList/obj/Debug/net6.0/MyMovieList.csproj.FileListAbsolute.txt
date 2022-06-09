@@ -131,3 +131,9 @@ C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\obj\Debug\net6.0
 C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\obj\Debug\net6.0\MyMovieList.pdb
 C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\obj\Debug\net6.0\MyMovieList.genruntimeconfig.cache
 C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\obj\Debug\net6.0\ref\MyMovieList.dll
+C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Rohith Kurian\Desktop\Projects\MyMovieList\MyMovieList\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
