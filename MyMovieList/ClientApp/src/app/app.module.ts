@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
@@ -29,6 +28,9 @@ import { RegisterComponent } from './register/register.component';
 import { AuthService } from './services/auth.service';
  
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { HeroComponent } from './hero/hero.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +61,7 @@ import { HttpClientModule } from '@angular/common/http';
     MdbTooltipModule,
     MdbValidationModule,
     HttpClientModule,
+    AppRoutingModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -11,3 +11,8 @@
 .form-inputs:focus{
     border-color: red !important;
 }
+
+.login{
+    position: relative;
+    z-index: 100000000;
+}

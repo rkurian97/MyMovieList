@@ -10,5 +10,7 @@ namespace MyMovieList.Data
             : base(options)
         {
         }
+
+        public DbSet<Movie> Movies {get; set;}
     }
 }

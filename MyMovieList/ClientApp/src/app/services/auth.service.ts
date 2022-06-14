@@ -15,10 +15,19 @@ export class AuthService {
   }
 
   login(data: any): Observable<any>{
-    return this.http.post(this.loginPath, data, {responseType: 'text' })
+    return this.http.post(this.loginPath, data)
   }
 
   register(data: any): Observable<any> {
-    return this.http.post(this.registerPath, data)
+    
+    return this.http.post(this.registerPath, {username: data.username, password: data.password})
+  }
+
+  saveToken(token: any){
+    localStorage.setItem('token', token)
+  }
+
+  getToken(){
+    localStorage.getItem('token')
   }
 }

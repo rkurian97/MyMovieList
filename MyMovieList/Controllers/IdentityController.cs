@@ -21,7 +21,7 @@ namespace MyMovieList.Controllers
         }
 
         [Route(nameof(Register))]
-        public async Task<ActionResult> Register(UserRegistration model)
+        public async Task<ActionResult<object>> Register(UserRegistration model)
         {
             var user = new User
             {
@@ -31,14 +31,14 @@ namespace MyMovieList.Controllers
 
             if(result.Succeeded)
             {
-                return Ok();
+                return result;
             }
-
+        
             return BadRequest(result.Errors);
         }
 
         [Route(nameof(Login))]
-        public async Task<ActionResult<string>> Login(UserLogin model)
+        public async Task<ActionResult<object>> Login(UserLogin model)
         {
             var user= await this.userManager.FindByNameAsync(model.UserName);
             if(user==null)
@@ -56,9 +56,10 @@ namespace MyMovieList.Controllers
             var key = Encoding.ASCII.GetBytes(this.appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
+                Subject = new ClaimsIdentity(new []
                 {
-                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                    new Claim(ClaimTypes.NameIdentifier, user.Id),
+                    new Claim(ClaimTypes.Name, user.UserName)
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -67,7 +68,10 @@ namespace MyMovieList.Controllers
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var encryptedToken = tokenHandler.WriteToken(token);
 
-            return encryptedToken;
+            return new
+            {
+                Token= encryptedToken
+            };
         }
     }
 }
