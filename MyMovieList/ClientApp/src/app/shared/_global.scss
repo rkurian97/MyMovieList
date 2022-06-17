@@ -23,7 +23,7 @@ $fourth: #404040;
     background-color: $third !important;
 }
 
-.bg-fourth{
+@mixin bg-fourth{
     background-color: $fourth !important;
 }
 

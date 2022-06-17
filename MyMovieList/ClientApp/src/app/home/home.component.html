@@ -1,4 +1,4 @@
-<div class="home container">
+<div class="home container-fluid">
   <form class="form-inline md-form form-sm row justify-content-center align-items-center mt-5">
     <div class="col-4">
       <input class="form-control form-control-sm mr-3" type="text" placeholder="Search" aria-label="Search"
@@ -9,6 +9,14 @@
     </div>
      
   </form>
+
+  <h1 class="mt-2">Popular Movies</h1>
+  <section id="popularMovies" class='media-scroller'>
+    <div class='media-element' *ngFor="let movie of popularMovies?.results; let i=index">
+      <img src="https://image.tmdb.org/t/p/w500{{movie.backdrop_path}}"/>
+      <p class="title">{{movie.title}}</p>
+    </div>
+  </section>
 
 
 </div>

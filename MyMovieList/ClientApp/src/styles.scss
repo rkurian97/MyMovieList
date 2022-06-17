@@ -12,3 +12,19 @@ body{
     @include global.bg-first
 }
 
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+ }
+ 
+ ::-webkit-scrollbar:hover{
+    background-color: rgb(94, 91, 91);
+    opacity: .1;
+    padding: .1rem;
+ }
+
+ ::-webkit-scrollbar-thumb {
+    @include global.bg-fourth;
+    border-radius: .375rem;
+    height: .6875rem;
+ }
