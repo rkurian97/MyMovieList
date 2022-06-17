@@ -24,7 +24,11 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
         options.Password.RequiredLength = 6;
     })
     .AddEntityFrameworkStores<MyMovieListDbContext>();
+
 builder.Services.AddControllers();
+builder.Services.AddHttpClient("tmdb", c=>{
+    c.BaseAddress= new Uri("http://api.themoviedb.org/3/");
+});
 
 //JWT
 var appSettingsConfiguration = builder.Configuration.GetSection("ApplicationSettings");
